@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Assets/BG.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-wrapper {
+            position: relative;
+            margin: 10px;
+        }
+
+        .button {
+            width: 210px;
+            height: 210px;
+            border: 0px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.2);
+        }
+
+        .label {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            transition: opacity 0.3s ease;
+            font-family: 'Black Ops One', cursive;
+        }
+
+        .button-wrapper:hover .label {
+            opacity: 1;
+        }
+
+        #button1 { 
+            background-image: url('https://media.discordapp.net/attachments/1178838948018135101/1189379485821317170/1703639970130.png?ex=659df2f7&is=658b7df7&hm=d8fcdf895e483eb4ad420ee982cc5a8e26a0e68ffcd8e9ef7995c023f83b9960&=&format=webp&quality=lossless&width=1746&height=1614'); 
+            font-family: 'Comic Sans MS', cursive; 
+        }
+
+        #button2 { 
+            background-image: url('https://cdn.discordapp.com/attachments/1178838948018135101/1189379511331061760/1703640076060.png?ex=659df2fd&is=658b7dfd&hm=7745f1640bbdc8a07498a931ebf280fe986f93cee019bedfede56a6df3149141&'); 
+            font-family: 'Open Sans', sans-serif; 
+        }
+
+        #button3 { 
+            background-image: url('https://cdn.discordapp.com/attachments/1178838948018135101/1189379532763955372/1703640198343.png?ex=659df302&is=658b7e02&hm=72ea6daec4e7dcdab4f450416d5a4c3f60eccf016d8b43b8e3b40470d68e3829&'); 
+            font-family: 'Lobster', cursive; 
+        }
+
+        #button4 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Pacifico', cursive; 
+        }
+
+        #button5 { 
+            background-image: url('./Assets/Icons/Yuletide.png'); 
+            font-family: 'Caveat', cursive; 
+        }
+
+        #button6 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        #button7 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Roboto', sans-serif; 
+        }
+
+        #button8 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Your Font Family'; 
+        }
+
+        #button9 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Your Font Family'; 
+        }
+
+        #button10 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Your Font Family'; 
+        }
+
+        #button11 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Your Font Family'; 
+        }
+
+        #button12 { 
+            background-image: url('./Assets/Icons/DeadIsland.png'); 
+            font-family: 'Your Font Family'; 
+        }
+
+        #button13 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Your Font Family'; 
+        }
+
+        #button14 { 
+            background-image: url('./Assets/WIP.png'); 
+            font-family: 'Your Font Family'; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <div class="row">
+            <div class="button-wrapper">
+                <div id="button1" class="button" onclick="window.location.href='../Game/ZB1/index.html';"></div>
+                <div class="label">Zeddbox V1</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button2" class="button" onclick="window.location.href='../Game/ZB2/index.html';"></div>
+                <div class="label">Zeddbox V2</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button3" class="button" onclick="window.location.href='../Game/ZB3/index.html';"></div>
+                <div class="label">Zeddbox V3</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button4" class="button" onclick="window.location.href='../Game/CS/index.html';"></div>
+                <div class="label">Zeddbox V4</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button8" class="button" onclick="window.location.href='../Game/CS/index.html';"></div>
+                <div class="label">Zeddbox V5</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button9" class="button" onclick="window.location.href='../Game/CS/index.html';"></div>
+                <div class="label">Zeddbox V6</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button10" class="button" onclick="window.location.href='../Game/CS/index.html';"></div>
+                <div class="label">Zeddbox V6</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button11" class="button" onclick="window.location.href='../Game/CS/index.html';"></div>
+                <div class="label">Xeddbox</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button-wrapper">
+                <div id="button5" class="button" onclick="window.location.href='../Game/YT/index.html';"></div>
+                <div class="label">Yuletide</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button12" class="button" onclick="window.location.href='../Game/DI/index.html';"></div>
+                <div class="label">Dead Island</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="button-wrapper">
+                <div id="button6" class="button" onclick="window.location.href='../Game/CS/index.html';"></div>
+                <div class="label">Fortressbox V1</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button7" class="button" onclick="window.location.href='../Game/FB2Joke/index.html';"></div>
+                <div class="label">Fortressbox V2</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button13" class="button" onclick="window.location.href='../Game/FB3-4Joke/index.html';"></div>
+                <div class="label">Fortressbox V3</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button14" class="button" onclick="window.location.href='../Game/FB3-4Joke/index.html';"></div>
+                <div class="label">Fortressbox V4</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
