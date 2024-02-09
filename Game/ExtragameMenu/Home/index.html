@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./BG.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 49px;
+        }
+
+        .button-wrapper {
+            position: relative;
+            margin-right: 50px;
+        }
+
+        .button {
+            width: 210px;
+            height: 210px;
+            border: 0px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.175);
+        }
+
+        .label {
+            position: absolute;
+            top: -63px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            transition: opacity 0.3s ease;
+            font-family: 'Black Ops One', cursive;
+        }
+
+        .button-wrapper:hover .label {
+            opacity: 1;
+        }
+
+        .lore-button {
+            position: absolute;
+            top: 50%;
+            right: -55px;
+            transform: translateY(50%);
+            background-color: #000;
+            color: #8F555A;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .button-wrapper:hover .lore-button {
+            opacity: 1;
+        }
+
+        #button1 {
+            background-image: url('./Icons/BS1.png');
+        }
+
+        #button2 {
+            background-image: url('./Icons/BS2.png');
+        }
+
+        #button3 {
+            background-image: url('./Icons/BS3.png');
+        }
+
+        #button4 {
+            background-image: url('./Icons/CA.png');
+        }
+
+        #button5 {
+            background-image: url('./Icons/HL3.png');
+        }
+
+        #button6 {
+            background-image: url('./Icons/SC2D.png');
+             
+        }
+
+        #button7 {
+            background-image: url('./Icons/SC3D.png');
+             
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="button-wrapper">
+                <div id="button1" class="button" onclick="window.location.href='../BS1/index.html';"></div>
+                <div class="label">Beast Simulator I</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button2" class="button" onclick="window.location.href='../BS2/index.html';"></div>
+                <div class="label">Beast Simulator II</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button3" class="button" onclick="window.location.href='../BS3/index.html';"></div>
+                <div class="label">Beast Simulator III</div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="button-wrapper">
+                <div id="button4" class="button" onclick="window.location.href='../CA/index.html';"></div>
+                <div class="label">Chezborger Apocalypse</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button5" class="button" onclick="window.location.href='../HL3/index.html';"></div>
+                <div class="label">Half-Life 3</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button6" class="button" onclick="window.location.href='../SC2D/index.html';"></div>
+                <div class="label">Sex Cheese 2D</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button7" class="button" onclick="window.location.href='../SC3D/index.html';"></div>
+                <div class="label">Sex Cheese 3D </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

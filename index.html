@@ -1,11 +1,130 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://Zeddbox.alexspac.es/Home">
-    <title>Redirecting to Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Assets/BG.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 49px;
+        }
+
+        .button-wrapper {
+            position: relative;
+            margin-right: 50px;
+        }
+
+        .button {
+            width: 300px;
+            height: 210px;
+            border: 0px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.175);
+        }
+
+        .label {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            transition: opacity 0.3s ease;
+            font-family: 'Black Ops One', cursive;
+        }
+
+        .button-wrapper:hover .label {
+            opacity: 1;
+        }
+
+        .lore-button {
+            position: absolute;
+            top: 50%;
+            right: -55px;
+            transform: translateY(50%);
+            background-color: #000;
+            color: #8F555A;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .button-wrapper:hover .lore-button {
+            opacity: 1;
+        }
+
+        #button1 {
+            background-image: url('https://media.discordapp.net/attachments/1178838948018135101/1189379485821317170/1703639970130.png?ex=659df2f7&is=658b7df7&hm=d8fcdf895e483eb4ad420ee982cc5a8e26a0e68ffcd8e9ef7995c023f83b9960&=&format=webp&quality=lossless&width=1746&height=1614')
+        }
+
+        #button2 {
+            background-image: url('https://cdn.discordapp.com/attachments/1178838948018135101/1189379511331061760/1703640076060.png?ex=659df2fd&is=658b7dfd&hm=7745f1640bbdc8a07498a931ebf280fe986f93cee019bedfede56a6df3149141&')
+        }
+
+        #button3 {
+            background-image: url('https://cdn.discordapp.com/attachments/1178838948018135101/1189379532763955372/1703640198343.png?ex=659df302&is=658b7e02&hm=72ea6daec4e7dcdab4f450416d5a4c3f60eccf016d8b43b8e3b40470d68e3829&')
+        }
+    </style>
 </head>
+
 <body>
-    <p>If you are not redirected, <a href="https://Zeddbox.alexspac.es/Home">click here</a>.</p>
+
+    <div class="button-container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="button-wrapper">
+                <div id="button1" class="button" onclick="window.location.href='./Game/ZeddboxMenu/Home/index.html';"></div>
+                <div class="label">Zeddbox</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button2" class="button" onclick="window.location.href='./Game/SpinoffsMenu/Home/index.html';"></div>
+                <div class="label">SpinOffs</div>
+            </div>
+            <div class="button-wrapper">
+                <div id="button3" class="button" onclick="window.location.href='./Game/ExtragamesMenu/Home/index.html';"></div>
+                <div class="label">Extra Games</div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
